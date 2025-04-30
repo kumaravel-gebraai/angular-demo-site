@@ -7,11 +7,12 @@ import { ServicesComponent } from './app/services/services.component';
 import { ContactComponent } from './app/contact/contact.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'contact', component: ContactComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' }
+  { path: '', redirectTo: '/', pathMatch: 'full' }
 ];
 
 bootstrapApplication(AppComponent, {
