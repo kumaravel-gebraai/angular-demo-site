@@ -14,8 +14,4 @@ const routes: Routes = [
   { path: '', redirectTo: '/', pathMatch: 'full' }
 ];
 
-bootstrapApplication(AppComponent, {
-  providers: [
-    provideRouter(routes)
-  ]
-}).catch(err => console.error(err));
+bootstrapApplication(AppComponent).catch(err => console.error(err));

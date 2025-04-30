@@ -15,18 +15,54 @@
 // }
 
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+// import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, FooterComponent],
+  imports: [ NavbarComponent, FooterComponent],
   template: `
     <app-navbar></app-navbar>
     <main>
-      <router-outlet></router-outlet>
+      <div style="font-family: Arial, sans-serif;">
+  <!-- Hero Section -->
+  <div style="background-color: #f8f9fa; padding: 60px 0; text-align: center;">
+    <div style="max-width: 800px; margin: 0 auto; padding: 0 20px;">
+      <h1 style="color: #333; font-size: 2.5em; margin-bottom: 20px;">Welcome to Our Website</h1>
+      <p style="color: #666; font-size: 1.2em; margin-bottom: 30px;">Discover amazing solutions for your digital needs</p>
+      <button style="background-color: #007bff; color: white; border: none; padding: 12px 30px; border-radius: 5px; cursor: pointer;">Get Started</button>
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <div style="padding: 60px 0;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-around; flex-wrap: wrap;">
+      <div style="width: 300px; text-align: center; margin: 20px;">
+        <h3 style="color: #333;">Feature 1</h3>
+        <p style="color: #666;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div style="width: 300px; text-align: center; margin: 20px;">
+        <h3 style="color: #333;">Feature 2</h3>
+        <p style="color: #666;">Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      </div>
+      <div style="width: 300px; text-align: center; margin: 20px;">
+        <h3 style="color: #333;">Feature 3</h3>
+        <p style="color: #666;">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Call to Action Section -->
+  <div style="background-color: #007bff; color: white; padding: 60px 0; text-align: center;">
+    <div style="max-width: 800px; margin: 0 auto; padding: 0 20px;">
+      <h2 style="margin-bottom: 20px;">Ready to Get Started?</h2>
+      <p style="margin-bottom: 30px;">Join thousands of satisfied customers today!</p>
+      <button style="background-color: white; color: #007bff; border: none; padding: 12px 30px; border-radius: 5px; cursor: pointer;">Contact Us</button>
+    </div>
+  </div>
+</div>
     </main>
     <app-footer></app-footer>
   `
