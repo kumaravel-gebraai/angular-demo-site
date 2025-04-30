@@ -1,10 +1,13 @@
-<nav class="navbar">
-  <div class="container">
-    <div class="logo">My Static Site</div>
-    <ul class="nav-links">
-      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
-      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
-      <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+<nav style="background-color: #333; padding: 1rem 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem; display: flex; justify-content: space-between; align-items: center;">
+    <div style="color: white; font-size: 1.5rem; font-weight: bold;">My Static Site</div>
+    <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 2rem;">
+      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" 
+             style="color: white; text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: background-color 0.3s;">Home</a></li>
+      <li><a routerLink="/about" 
+             style="color: white; text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: background-color 0.3s;">About</a></li>
+      <li><a routerLink="/contact" 
+             style="color: white; text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: background-color 0.3s;">Contact</a></li>
     </ul>
   </div>
 </nav>
