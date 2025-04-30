@@ -40,15 +40,15 @@ import { FooterComponent } from './footer/footer.component';
   <div style="padding: 60px 0;">
     <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-around; flex-wrap: wrap;">
       <div style="width: 300px; text-align: center; margin: 20px;">
-        <h3 style="color: #333;">Feature 1</h3>
+        <a href="/feature1"><h3 style="color: #333;">Feature 1</h3></a>
         <p style="color: #666;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
       <div style="width: 300px; text-align: center; margin: 20px;">
-        <h3 style="color: #333;">Feature 2</h3>
+        <a href="/feature2"><h3 style="color: #333;">Feature 2</h3></a>
         <p style="color: #666;">Sed do eiusmod tempor incididunt ut labore et dolore.</p>
       </div>
       <div style="width: 300px; text-align: center; margin: 20px;">
-        <h3 style="color: #333;">Feature 3</h3>
+        <a href="/feature3"><h3 style="color: #333;">Feature 3</h3></a>
         <p style="color: #666;">Ut enim ad minim veniam, quis nostrud exercitation.</p>
       </div>
     </div>
